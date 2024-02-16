@@ -29,25 +29,25 @@ const pathImages = "./src/assets/icons/";
 const cardData = [
     {
         id: 0,
-        name: "Blue Eyes White Dragon",
+        name: "The Wood",
         type: "Paper",
-        img: `${pathImages}dragon.png`,
+        img: `${pathImages}wood.png`,
         WinOf: [1],
         LoseOf: [2],
     },
     {
         id: 1,
-        name: "Dark Magician",
+        name: "The Shield",
         type: "Rock",
-        img: `${pathImages}magician.png`,
+        img: `${pathImages}shield.jpg`,
         WinOf: [2],
         LoseOf: [0],
     },
     {
         id: 2,
-        name: "Exodia",
+        name: "The Sword",
         type: "Scissors",
-        img: `${pathImages}exodia.png`,
+        img: `${pathImages}sword.jpg`,
         WinOf: [0],
         LoseOf: [1],
     }
