@@ -118,7 +118,7 @@ async function drawButton(text) {
 }
 
 async function updateScore() {
-    state.score.scoreBox.innerText = `Win: ${state.score.playerScore} | Lose: ${state.score.computerScore}`;
+    state.score.scoreBox.innerText = `Ganhou: ${state.score.playerScore} | Perdeu: ${state.score.computerScore}`;
 }
 
 async function checkDuelResults(playerCardId, computerCardId) {
@@ -174,7 +174,7 @@ async function playAudio(status) {
     const audio = new Audio(`./src/assets/audios/${status}.wav`);
  
     try {
-        audio.volume = 0.5;
+        
         audio.play();
     } catch {}
 }
