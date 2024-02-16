@@ -122,15 +122,15 @@ async function updateScore() {
 }
 
 async function checkDuelResults(playerCardId, computerCardId) {
-    let duelResults = "Draw";
+    let duelResults = "Empate";
     let playerCard = cardData[playerCardId];
 
     if(playerCard.WinOf.includes(computerCardId)){
-        duelResults = "Win";
+        duelResults = "Ganhou";
         state.score.playerScore++;
     }
     if(playerCard.LoseOf.includes(computerCardId)){
-        duelResults = "Lose";
+        duelResults = "Perdeu";
         state.score.computerScore++;
     }
     await playAudio(duelResults);
@@ -174,6 +174,7 @@ async function playAudio(status) {
     const audio = new Audio(`./src/assets/audios/${status}.wav`);
  
     try {
+        audio.volume = 0.5;
         audio.play();
     } catch {}
 }
@@ -184,6 +185,7 @@ function init() {
     drawCards(5, state.playerSides.player1);
     drawCards(5, state.playerSides.computer);
     const bgm = document.getElementById("bgm");
+    bgm.volume = 0.1;
     bgm.play();
 }
 

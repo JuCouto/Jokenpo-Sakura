@@ -61,7 +61,7 @@
 .framed-golden-2 {
   /* border */
   border-style: solid;
-  border-image-source: url("../assets/rpg/border-image-golden2.png");
+  border-image-source: url("../assets/rpg/wallpaper.png");
   border-image-repeat: repeat;
   border-image-slice: 8 8 8 8;
   border-image-width: 18px;

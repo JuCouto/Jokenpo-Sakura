@@ -23,16 +23,16 @@
 </head>
 <body>
     <audio id="bgm" loop>
-        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3" />
+        <source src="./src/assets/audios/abertura.mp3" type="audio/mp3" />
     </audio>
     
     <div class="bg-video">
         <video class="video" autoplay loop muted>
-            <source src="./src/assets/video/yugi.mp4" type="video/mp4"/>
+            <source src="./src/assets/video/video.mp4" type="video/mp4"/>
         </video>
     </div>
     <div class="container">
-        <div class="container__left framed-golden-2">
+        <div class="container__left image-left">
             <div class="score_box frame">
                 <span id="score_points">Vencidos: 0 | Perdidos: 0</span>
             </div>
@@ -47,24 +47,24 @@
 
         <div class="container__right">
             <div class="card-box__container">
-                <div class="card-box framed" id="computer-cards"></div>
+                <div class="card-box barra-cartas" id="computer-cards"></div>
                 <div class="card-versus__container">
                     <div class="versus-top">
                         <div class="card-infield">
-                            <img id="player-field-card" height="180px" width="125px">
+                            <img id="player-field-card" height="220px" width="125px">
                         </div>
 
-                        <img src="./src/assets/icons/millenium2.png" height="100px" alt="">
+                        <img class="image-central" src="./src/assets/icons/icone-central.png" height="100px" alt="">
 
                         <div class="card-infield">
-                            <img id="computer-field-card" height="180px" width="125px">
+                            <img id="computer-field-card" height="220px" width="125px">
                         </div>
                     </div>
                     <div class="versus-bottom">
-                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">GANHOU!</button>
+                        <button id="next-duel" class="button" onclick="resetDuel()">GANHOU!</button>
                     </div>
                 </div>
-                <div class="card-box framed" id="player-cards"></div>
+                <div class="card-box barra-cartas" id="player-cards"></div>
             </div>
         </div>
     </div>

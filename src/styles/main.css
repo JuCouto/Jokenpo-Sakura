@@ -1,5 +1,5 @@
 body {
-    cursor: url("../assets/cursor/yugicursor.png"), default;
+    cursor: url("../assets/cursor/cursor.png"), default;
 }
 
 button,
@@ -7,7 +7,7 @@ a,
 img:hover,
 button:hover,
 a:hover{
-    cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+    cursor: url("../assets/cursor/cursor.png"), auto;
 }
 
 .bg-video {
@@ -32,7 +32,7 @@ a:hover{
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(90deg, #E34084 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(80deg, #E34084 , rgba(0,0,0,0.8) , rgba(0,0,0,1) );
 }
 
 .container {
@@ -51,12 +51,17 @@ a:hover{
     justify-content: space-around;
 }
 
+.image-left{
+    background-image: url("../assets/rpg/wallpaper.png");
+    padding: 25px;
+    background-size:550px;
+}
 .container__right {
     width: 65%;
 }
 
 .score_box {
-    background-color: #E2D4D8;
+    background-color: #f4eff1;
     padding: 30px;
 }
 
@@ -66,7 +71,7 @@ a:hover{
 }
 
 .card_datails {
-    background-color: #E2D4D8;
+    background-color: #f4eff1;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -74,6 +79,13 @@ a:hover{
     justify-content: space-between;
     height: 6rem;
     width: 100%;
+}
+.barra-cartas{
+    border-image-width: 18px;
+  border-width: 15px;
+  padding: 12px;
+  background-color: #666265;
+  border-radius: 7px;
 }
 
 #card-name {
@@ -126,7 +138,7 @@ a:hover{
 }
 
 .card-infield {
-    height: 11.2rem;
+    height: 13.9rem;
     width: 8rem;
     border: 1px solid #E2D4D8;
     border-radius: 8px;
@@ -138,4 +150,21 @@ a:hover{
 
 .card:hover {
     transform: scale(1.2);
+}
+
+.image-central{
+ padding: 0 10px;
+}
+
+.button{
+    position: fixed;
+  z-index: 10;
+  border: 1px solid #E34084;
+  width: 100px;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 5px;
+  overflow: show;
+  font-weight: bold;
+  color: #E34084;
 }
